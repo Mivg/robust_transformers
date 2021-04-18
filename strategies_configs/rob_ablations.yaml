@@ -1,0 +1,45 @@
+---
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    edit_distance: 0.1
+    beam_size: 1
+    backtracking: true
+    method: text-fooler
+    early_stop: True
+    prioritize_once: true
+    perform_semantic_filtering: False
+    perform_pos_filtering: False
+    name: TxF_w_backtracking
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    edit_distance: 0.1
+    beam_size: 1
+    backtracking: true
+    method: text-fooler
+    early_stop: True
+    prioritize_once: false
+    perform_semantic_filtering: False
+    perform_pos_filtering: False
+    name: BFF_w_masking
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    edit_distance: 0.1
+    beam_size: 1
+    backtracking: true
+    method: random
+    early_stop: True
+    prioritize_once: false
+    perform_semantic_filtering: False
+    perform_pos_filtering: False
+    name: BFF
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    edit_distance: 0.1
+    beam_size: 1
+    backtracking: true
+    method: random
+    early_stop: True
+    prioritize_once: true
+    perform_semantic_filtering: False
+    perform_pos_filtering: False
+    name: BFF_single_factorization

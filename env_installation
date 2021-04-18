@@ -1,0 +1,14 @@
+curl -O https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+sha256sum Anaconda3-2020.11-Linux-x86_64.sh  ->  cf2ff493f11eaad5d09ce2b4feaa5ea90db5174303d5b3fe030e16d29aeef7de
+
+conda create -n robust python=3.7
+source activate robust
+pip install dash dash-bootstrap-components dash-table netifaces scikit-learn threadpoolctl spacy nltk pyyaml pandas attrs xlsxwriter==1.3.7
+pip install torch==1.7.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html  # alternative for cuda 10.1: pip install torch==1.7.1+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+pip install psutil recordclass GPUtil sqlitedict boto3 sacremoses sentencepiece packaging filelock
+pip install tensorboard==2.0.0 tensorflow==2.0.0 tensorflow-estimator==2.0.0 tensorflow_hub datasets==1.0.0
+pip3 install --upgrade tensorflow-gpu  # for Python 3.n and GPU
+
+pip install transformers==4.0.1
+
+python3 -m spacy download en_core_web_sm

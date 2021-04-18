@@ -1,0 +1,45 @@
+---
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    backtracking: true
+    method: random
+    edit_distance: 0.1
+    early_stop: true
+    beam_size: 1
+    prioritize_once: False
+    name: BFF
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    backtracking: False
+    method: random
+    edit_distance: 0.1
+    early_stop: true
+    beam_size: 1
+    prioritize_once: False
+    name: BFF_no_backtracing
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    backtracking: true
+    method: random
+    edit_distance: 0.1
+    early_stop: true
+    beam_size: 2
+    prioritize_once: False
+    name: BFF_beam2
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    backtracking: false
+    method: text-fooler
+    edit_distance: 0.1
+    early_stop: true
+    beam_size: 1
+    prioritize_once: True
+    name: TextFooler
+- rand_ed10: {}
+- greedy_synonym_swap:
+    synonyms_path:
+    edit_distance: 0.1
+    early_stop: True
+- optimistic_greedy_synonym_swap:
+    synonyms_path:
+    edit_distance: 0.1

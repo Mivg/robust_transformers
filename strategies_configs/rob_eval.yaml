@@ -1,0 +1,19 @@
+---
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    backtracking: true
+    method: random
+    edit_distance: 0.1
+    early_stop: true
+    beam_size: 1
+    prioritize_once: False
+    name: InformedGreedyBeam1
+- informed_greedy_synonym_swap:
+    synonyms_path:
+    backtracking: false
+    method: text-fooler
+    edit_distance: 0.1
+    early_stop: true
+    beam_size: 1
+    prioritize_once: True
+    name: TextFooler
