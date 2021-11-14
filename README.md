@@ -4,6 +4,9 @@ This repository contains all code needed to train and evaluate the robustness of
 datasets for the [Achieving Model Robustness through Discrete Adversarial Training](https://arxiv.org/abs/2104.05062) paper. It is based on HuggingFace and pytorch.
 It also contains some auxiliary scripts and code from [TextFooler by Jin et. al](https://github.com/jind11/TextFooler)
 
+**Updated version of the code base, with additional scripts needed to run the experiments as given in the final version that was presented in EMNLP 2021 will be uploaded here shortly** 
+
+
 ## Preparing the environment
 To run the experiments you would need to create a virtual environment and download the data. You will also need access to GPUs
 
